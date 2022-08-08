@@ -1,0 +1,118 @@
+// Tabs
+
+.tabs {
+    display: flex;
+    background:
+    linear-gradient(rgba(0, 0, 0, 0.2)), $background-2;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 1;
+    padding: 114px;
+  
+    .buttons {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      
+      button {
+        font-family: $font-1;
+        font-size: 14px;
+        position: relative;
+        background: #a37169;
+        color:$text-color-1;
+        font-size: medium;
+        transition: 0.3s;
+        border: none;
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+  
+        span {
+          display: inline-block;
+          transform: rotate(-45deg);
+          opacity: 0.5;
+        }
+      }
+      
+        button:hover {
+            cursor: pointer;
+            background:$background-color-2;
+            color: $text-color-1;
+        }
+    }
+    
+    .selected {
+      background: $background-color-2;
+      color: $text-color-1;
+      opacity: 1;  
+    }
+    
+    .tab-row::after {
+      clear: both;
+      display: table;
+    }
+    
+      .tab-text {
+        color: $text-color-1;;
+        padding: 30px;
+        float: left;
+        width: 55%;
+  
+        h2 {
+          font-family: $font-1;
+          font-size: 36px;
+          padding-bottom: 30px;
+        }
+        }
+       
+        p {
+          font-family: 'Montserrat', $font-2;
+          font-size: 14px;
+          line-height: 25px;
+        }
+  
+        .images {
+            display: flex;
+            flex-wrap: wrap;
+            float: left;
+            width: 40%;
+            gap: 15px;
+        
+            .img-1 {
+            background: $tab-1a;
+            width: 168px;
+            height: 168px;
+            @include img-style;
+    
+            }
+            .img-2 {
+            background: $tab-1b;
+            width: 168px;
+            height: 168px;
+            @include img-style;
+    
+            }
+            .img-3 {
+            background: $tab-1c;
+            width: 351px;
+            height: 177px;
+            @include img-style;
+            }
+        }
+
+      #second {
+        .img-1 {
+          width: 702px;
+          height: 354px;  
+        }
+      }
+      #third {
+        .img-2 {
+          width: 702px;
+          height: 354px;  
+        }
+    }
+     
+  
+}

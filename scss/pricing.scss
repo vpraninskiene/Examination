@@ -1,0 +1,99 @@
+/ Pricing options
+
+.pricing-options {
+  display: flex;
+  flex-direction: column;
+  background: $background-color-3;
+  padding: 97px ;
+
+  .pricing-header{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    align-items:center;
+    color: $text-color-1;
+
+    h2 {
+      font-family: $font-1;
+      font-size: 36px;
+    }
+
+    .devider-green {
+      background-image: $devider-green;
+      background-repeat: no-repeat;
+      height: 20%;
+      width: 10%; 
+      background-position: center;
+      padding: 30px;
+    }
+
+    p {
+      font-family: $font-2;
+      font-size: 14px;
+      padding-bottom: 50px;
+    }
+  }
+ 
+  .prices {
+    display: flex;  
+    justify-content: center;
+    align-items: flex-end;
+
+    .subscription-variant {
+      font-family: $font-2;
+      border-radius: 5px;
+      width: 343px;
+      margin: 20px;
+      align-items: center;
+      text-align: center;
+
+      .prices-head {
+        background: $background-color-1;
+        color: $text-color-1;
+
+        h3 {
+          font-size: 20px;
+          padding-bottom: 30px;
+          padding-top: 20px;
+        }
+
+        .charge {
+          font-size: 94px;
+
+          span {
+            font-size: 45px;
+          }
+        }
+
+        .periodicity {
+          font-size: 14px;
+          opacity: 50%;
+          padding: 30px;
+
+        }
+
+        .line {
+          background:$background-color-5;
+          height: 10px;
+        }
+
+        .line-text {
+          background:$background-color-5;
+          padding: 15px;
+
+        }
+      }
+
+      .description {
+        color: #86878B;
+        background: $text-color-1;
+
+        p {
+          padding: 15px;
+        }
+      }
+    }
+  }
+}

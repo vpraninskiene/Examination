@@ -1,0 +1,55 @@
+@mixin img-style {
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@mixin input-style {
+  font-family: $font-2;
+  font-size: 12px;
+  border: none;
+  border-bottom: 1px solid $input-color;
+  padding: 30px 0 5px 10px;
+  color:$input-color ;
+}
+
+@mixin form-style {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 30px;
+}
+
+@mixin label-style {
+  margin-right: 10px;
+  font-family: $font-1;
+  font-size: 9px;
+  color: $text-color-3;
+  opacity: 1;
+  font-weight: bold;
+}
+
+@mixin input-radio-style {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 0;
+  width: 15px;
+  height: 15px;
+  border: 2px solid $border-color-3;
+  border-radius: 100%;
+  position: relative;
+}
+
+@mixin input-before {
+  position: absolute;
+  content: "";
+  width: 7px;
+  height: 7px;
+  background: $background-color-5;
+  border-radius: 100px;
+  top: 2px;
+  left: 2px;
+  transform: scale(0);
+  transition: 0.2s;
+}

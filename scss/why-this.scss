@@ -1,0 +1,82 @@
+// Why this
+
+.why-this {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 50px;
+  
+    .why-header {
+      text-align: center;
+      padding: 80px;
+      margin: auto;
+      
+  
+      h2 {
+        font-family: 'Montserrat', $font-1;
+        font-weight: bold;
+        font-size: 36px;
+      }
+  
+      .devider-orange-small {
+        background-image: $devider-orange-small;
+        background-size: contain;
+        height: 2.5px;
+        width: 80px;
+        margin: 30px 0 30px 175px;
+        background-position: center
+      }
+  
+      p {
+        font-family: $font-2;
+        font-size: 14px;
+      }
+    }
+  
+    .why-reasons {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: space-around;
+      margin: auto;
+  
+      .why {
+        display: flex;
+        flex-direction: column;
+        width: 20%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+  
+        .why-icon {
+          display:table;
+          line-height: 40px;
+          width: 70px;
+          height: 70px;
+        } 
+        
+          i {
+            color: $text-color-2;
+            display:table-cell;
+            text-align:center;
+            vertical-align:middle;
+            font-size: 30px;
+            border: 1px solid $border-color-1;
+            border-radius: 100%;
+            padding: 15px;  
+          }      
+  
+        h3 {
+          font-family: $font-2;
+          font-size: 20px;
+          padding: 25px;
+        }
+  
+        p {
+          font-family: $font-2;
+          font-size: 14px;
+          line-height: 20px;
+        }
+      }
+    }
+  }

@@ -1,0 +1,24 @@
+// Footer 2
+
+.footer-2 {
+    display: flex;
+    justify-content: space-around ;
+    gap:40px;
+    background: $background-color-1;
+    padding: 40px; 
+   
+    p {
+      font-family: $font-2;
+      font-size: 18px;
+      opacity: 0.69;
+      color: $text-color-1;
+    }
+  
+    .icons-2{
+      color: $text-color-2;
+      font-size: 1.5em;
+      word-spacing: 100px; 
+    }
+  
+}
+  
